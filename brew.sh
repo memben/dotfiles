@@ -85,15 +85,16 @@ brew install git
 brew install git-lfs
 # brew install gs
 brew install imagemagick --with-webp
-# brew install lua
+brew install lua
 brew install lynx
-# brew install p7zip
-# brew install pigz
+brew install p7zip
+brew install pigz
 brew install pv
 brew install rename
 brew install rlwrap
 brew install ssh-copy-id
 brew install tree
+brew install tmux
 # brew install vbindiff
 # brew install zopfli
 
@@ -124,7 +125,7 @@ brew install --cask utm
 
 # Web Tools
 echo "Installing web tools..."
-brew install node
+brew install node 
 brew install nvm
 brew install --cask firefox
 brew install --cask google-chrome
@@ -150,10 +151,19 @@ brew install --cask rectangle
 brew install --cask spotify 
 brew install --cask karabiner-elements
 brew install --cask microsoft-onenote
+
+
+# Brew install multiple apps in parallel
+
+
+echo "Installing apps from App Store..."
+brew install mas
+mas install 1444383602 # GoodNotes 5
+mas install 497799835 # XCode
+
 echo "Please install if needed:" 
 echo "DisplayLink Manager: https://www.synaptics.com/products/displaylink-graphics/downloads/macos"
-echo "GoodNotes from AppStore"
-echo "Timetable from AppStore"
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
