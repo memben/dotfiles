@@ -167,4 +167,7 @@ echo "DisplayLink Manager: https://www.synaptics.com/products/displaylink-graphi
 # Remove outdated versions from the cellar.
 brew cleanup
 
+echo "Configuration of tools"
+source ./.config/.config 
+
 echo "Brew install complete!"
