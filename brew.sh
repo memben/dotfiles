@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# add path to .zshrc for (temporary) use
+export PATH="/opt/homebrew/bin:$PATH" >> ~/.zshrc
+
 # Install command-line tools using Homebrew.
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -24,7 +28,7 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install a modern version of Bash.
 brew install bash
-brew install bash-completion2
+brew install bash-completion@bb2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
