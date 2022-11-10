@@ -28,7 +28,7 @@ set -- -f; source bootstrap.sh
 
 ### Git-free install
 
-To install these dotfiles without Git:
+To install these dotfiles without Git (preferred):
 
 ```bash
 cd; curl -#L https://github.com/memben/dotfiles/tarball/main | tar -xzv --strip-components 1 --exclude={README.md,.osx,LICENSE-MIT.txt}
