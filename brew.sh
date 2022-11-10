@@ -30,6 +30,8 @@ brew install gnu-sed --with-default-names
 brew install bash
 brew install bash-completion@bb2
 
+brew install git 
+
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
   echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
