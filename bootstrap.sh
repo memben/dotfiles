@@ -12,9 +12,10 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-		
-	# install programs
+
+	# install programs and set shell to bash
 	source ~/brew.sh;
+
 	source ~/.bash_profile;
 }
 
