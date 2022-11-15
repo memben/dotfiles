@@ -145,7 +145,7 @@ echo "Installing communication apps..."
 brew install --cask discord
 brew install --cask microsoft-outlook
 brew install --cask slack
-brew install --cask telegram
+# brew install --cask telegram # try webapp instead
 brew install --cask zoom
 
 # General Utility Apps
