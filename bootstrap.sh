@@ -7,14 +7,16 @@ cd "$(dirname "${BASH_SOURCE}")";
 function doIt() {
 
 	# array of items to ignore
-	ignore=( "brew.sh" "bootstrap.sh" ".DS_Store" ".git/" ".osx" "README.md" "LICENSE-MIT.txt");
+	ignore=( brew.sh bootstrap.sh .DS_Store .git/ .osx README.md LICENSE-MIT.txt);
 
-	# symlink instead of copy
+	# link all files including dotfiles except those in ignore 
+	shopt -s dotglob;
 	for file in *; do
 		if [[ ! " ${ignore[@]} " =~ " ${file} " ]]; then
-    		ln -sf "$file" ~/."$file"
+			ln -sfnv "$PWD/$file" "$HOME";
 		fi
 	done
+	shopt -u dotglob;
 
 	source ~/.bash_profile;
 }
