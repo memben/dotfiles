@@ -38,6 +38,7 @@ To update later on, just run that command again.
 
 ## What to do after running the scripts
 
+Add custom keyboard layout in Settings >> Keyboard >> Edit Input >> + >> Scroll down >> others >> EN-DE
 
 Two support multiple external monitors on M1 install:
 https://www.synaptics.com/products/displaylink-graphics/downloads/macos

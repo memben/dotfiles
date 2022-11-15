@@ -5,13 +5,16 @@ cd "$(dirname "${BASH_SOURCE}")";
 # git pull origin main;
 
 function doIt() {
-	rsync --exclude ".git/" \
-		--exclude ".DS_Store" \
-		--exclude ".osx" \
-		--exclude "bootstrap.sh" \
-		--exclude "README.md" \
-		--exclude "LICENSE-MIT.txt" \
-		-avh --no-perms . ~;
+
+	# array of items to ignore
+	ignore = ("brew.sh" "bootstrap.sh" ".DS_Store" ".git/" ".osx" "README.md" "LICENSE-MIT.txt");
+
+	# symlink instead of copy
+	for file in *; do
+		if [[ ! " ${ignore[@]} " =~ " ${file} " ]]; then
+    		ln -sf "$file" ~/."$file"
+		fi
+	done
 
 	source ~/.bash_profile;
 }

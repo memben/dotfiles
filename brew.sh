@@ -174,6 +174,6 @@ echo "DisplayLink Manager: https://www.synaptics.com/products/displaylink-graphi
 brew cleanup
 
 echo "Configuration of tools"
-source ./.config/.config 
+source ./.appConfig/.config 
 
 echo "Brew install complete!"
