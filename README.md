@@ -52,7 +52,7 @@ https://www.synaptics.com/products/displaylink-graphics/downloads/macos
     * Ctrl/Space for Spotlight
     * Esc for Caps Lock
     * Command for Globe
-
+* install browser addons for firefox (bitwarden, Addblocker unlimited, Leechblock, Remove Youtube suggestions)
 
 
 ### Specify the `$PATH`
