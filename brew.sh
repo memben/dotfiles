@@ -45,7 +45,7 @@ brew install wget # --with-iri
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim # --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
@@ -172,8 +172,5 @@ echo "DisplayLink Manager: https://www.synaptics.com/products/displaylink-graphi
 
 # Remove outdated versions from the cellar.
 brew cleanup
-
-echo "Configuration of tools"
-source ./.appConfig/.config 
 
 echo "Brew install complete!"

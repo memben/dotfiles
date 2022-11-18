@@ -43,9 +43,16 @@ Two support multiple external monitors on M1 install:
 https://www.synaptics.com/products/displaylink-graphics/downloads/macos
 
 ### MacOS Settings
+* run ```bash source ~/.appConfig/.config``` to configure programms and keyboard layout as desired
 * Add custom keyboard layout in Settings >> Keyboard >> Edit Input >> + >> Scroll down >> others >> EN-DE
 * Set firefox as a standard webbrowser
 * for ASUS PB287Q set color profile to sRGB (to prevent flickering), make sure 60hz refresh rate is applied
+* edit Shortcuts 
+    * Shitf/Ctrl/R for Screenshot to Clipboard
+    * Ctrl/Space for Spotlight
+    * Esc for Caps Lock
+    * Command for Globe
+
 
 
 ### Specify the `$PATH`
