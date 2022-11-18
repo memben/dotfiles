@@ -4,10 +4,11 @@
 
 ## Installation
 
+Make sure to grant the terminal "Full Disk Access" to ensure the script works from a different dir than root (otherwise Library will not be permitted to be accessed) 
 
 ### Using Git and the bootstrap script
 
-You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
+You can clone the repository wherever you want. (I like to keep it in `~/Desktop/github/dotfiles/`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
 git clone https://github.com/memben/dotfiles.git && cd dotfiles
@@ -38,10 +39,13 @@ To update later on, just run that command again.
 
 ## What to do after running the scripts
 
-Add custom keyboard layout in Settings >> Keyboard >> Edit Input >> + >> Scroll down >> others >> EN-DE
-
 Two support multiple external monitors on M1 install:
 https://www.synaptics.com/products/displaylink-graphics/downloads/macos
+
+### MacOS Settings
+* Add custom keyboard layout in Settings >> Keyboard >> Edit Input >> + >> Scroll down >> others >> EN-DE
+* Set firefox as a standard webbrowser
+* for ASUS PB287Q set color profile to sRGB (to prevent flickering), make sure 60hz refresh rate is applied
 
 
 ### Specify the `$PATH`

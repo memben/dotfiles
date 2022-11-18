@@ -39,7 +39,7 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget # --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
@@ -90,7 +90,7 @@ brew install ack
 brew install git
 brew install git-lfs
 # brew install gs
-brew install imagemagick --with-webp
+brew install imagemagick # --with-webp
 brew install lua
 brew install lynx
 brew install p7zip
@@ -165,7 +165,7 @@ brew install --cask microsoft-onenote
 echo "Installing apps from App Store..."
 brew install mas
 mas install 1444383602 # GoodNotes 5
-mas install 497799835 # XCode
+# mas install 497799835 # XCode
 
 echo "Please install if needed:" 
 echo "DisplayLink Manager: https://www.synaptics.com/products/displaylink-graphics/downloads/macos"
