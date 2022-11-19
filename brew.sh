@@ -120,7 +120,7 @@ brew install htop
 brew install curl
 brew install docker
 brew install --cask docker # Docker-Desktop
-brew install --cask github
+# brew install --cask github
 brew install --cask iterm2
 brew install --cask visual-studio-code
 
@@ -150,13 +150,14 @@ brew install --cask zoom
 
 # General Utility Apps
 echo "Installing general utility apps..."
-brew install --cask bitwarden
+# brew install --cask bitwarden # does not support fingerprint webintegration
+brew install --cask authy
 brew install --cask notion
 brew install --cask scroll-reverser
 brew install --cask rectangle
 brew install --cask spotify 
 brew install --cask karabiner-elements
-brew install --cask microsoft-onenote
+# brew install --cask microsoft-onenote
 
 
 # Brew install multiple apps in parallel
@@ -164,6 +165,7 @@ brew install --cask microsoft-onenote
 
 echo "Installing apps from App Store..."
 brew install mas
+mas install 1137397744 # Bitwarden, might require manual downlaod
 mas install 1444383602 # GoodNotes 5
 # mas install 497799835 # XCode
 
