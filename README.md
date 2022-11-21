@@ -50,10 +50,8 @@ https://www.synaptics.com/products/displaylink-graphics/downloads/macos
 * Set firefox as a standard webbrowser
 * for ASUS PB287Q set color profile to sRGB (to prevent flickering), make sure 60hz refresh rate is applied
 * edit Shortcuts 
-    * Shitf/Ctrl/R for Screenshot to Clipboard
+    * Shitf/Ctrl/R for Screenshot of Area to Clipboard
     * Ctrl/Space for Spotlight
-    * Esc for Caps Lock
-    * Command for Globe
 * install browser addons for firefox (bitwarden, Addblocker unlimited, Leechblock, Remove Youtube suggestions)
 
 

@@ -8,11 +8,17 @@ function doIt() {
 
 	# array of items to ignore
 	ignore=( brew.sh bootstrap.sh .DS_Store .git/ .osx README.md LICENSE-MIT.txt);
+	copy=( .gitignore );
 
 	# link all files including dotfiles except those in ignore 
 	shopt -s dotglob;
 	for file in *; do
 		if [[ ! " ${ignore[@]} " =~ " ${file} " ]]; then
+			continue;
+		fi
+		if [[ " ${copy[@]} " =~ " ${file} " ]]; then
+			cp -r "$PWD/$file" "$HOME";
+		else
 			ln -sfnv "$PWD/$file" "$HOME";
 		fi
 	done
