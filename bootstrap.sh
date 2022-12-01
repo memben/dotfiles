@@ -7,7 +7,7 @@ cd "$(dirname "${BASH_SOURCE}")";
 function doIt() {
 
 	# array of items to ignore
-	ignore=( brew.sh bootstrap.sh .DS_Store .git/ .osx README.md LICENSE-MIT.txt);
+	ignore=( brew.sh bootstrap.sh .DS_Store .git .osx README.md LICENSE-MIT.txt);
 	copy=( .gitignore );
 
 	# link all files including dotfiles except those in ignore 
