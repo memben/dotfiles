@@ -12,6 +12,7 @@ alias -- -="cd -" # get back to previous directory
 # Shortcuts
 alias od="cd ~/OneDrive"
 alias uni="cd ~/OneDrive/uni"
+alias personal="cd ~/OneDrive/personal"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dev="cd ~/Desktop/dev"
