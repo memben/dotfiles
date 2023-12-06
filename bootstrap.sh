@@ -13,7 +13,7 @@ function doIt() {
 	# link all files including dotfiles except those in ignore 
 	shopt -s dotglob;
 	for file in *; do
-		if [[ ! " ${ignore[@]} " =~ " ${file} " ]]; then
+		if [[ " ${ignore[@]} " =~ " ${file} " ]]; then
 			continue;
 		fi
 		if [[ " ${copy[@]} " =~ " ${file} " ]]; then
