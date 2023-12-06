@@ -120,8 +120,6 @@ brew install htop
 brew install curl
 brew install docker
 brew install --cask docker # Docker-Desktop
-# brew install --cask github
-brew install --cask iterm2
 brew install --cask visual-studio-code
 
 # Virtualization
@@ -142,7 +140,6 @@ brew install --cask onedrive
 
 # Communication Apps
 echo "Installing communication apps..."
-brew install --cask discord
 brew install --cask microsoft-outlook
 brew install --cask slack
 # brew install --cask telegram # try webapp instead
@@ -166,7 +163,6 @@ brew install --cask karabiner-elements
 echo "Installing apps from App Store..."
 brew install mas
 mas install 1137397744 # Bitwarden, might require manual downlaod
-mas install 1444383602 # GoodNotes 5
 # mas install 497799835 # XCode
 
 echo "Please install if needed:" 
