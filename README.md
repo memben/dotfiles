@@ -43,6 +43,7 @@ Two support multiple external monitors on M1 install:
 https://www.synaptics.com/products/displaylink-graphics/downloads/macos
 
 ### MacOS Settings
+* run ```bash .macos```
 * setup ssh (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * setup gpg (https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)
 * run ```bash source ~/.appConfig/.config``` to configure programms and keyboard layout as desired
