@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Function to print usage
+print_usage() {
+    echo "Usage: llmc [file1 file2 ...] or [directory]"
+    echo "Copies file paths and contents to clipboard in a formatted way"
+    echo "If no arguments provided, processes all files in current directory"
+}
+
+# Function to process a single file
+process_file() {
+    local file=$1
+    # Check if file exists and is readable
+    if [[ -f "$file" && -r "$file" ]]; then
+        # Get absolute path
+        local abs_path=$(realpath "$file")
+        echo "\`\`\`"
+        echo "$abs_path"
+        cat "$file"
+        echo ""
+    fi
+}
+
+# Function to process directory
+process_directory() {
+    local dir=$1
+    # Find all regular files, excluding hidden files and directories
+    find "$dir" -type f -not -path '*/\.*' | while read file; do
+        process_file "$file"
+    done
+}
+
+# Main logic
+main() {
+    local output=""
+    
+    # If no arguments provided, process current directory
+    if [ $# -eq 0 ]; then
+        output=$(process_directory ".")
+    # If single argument is directory, process that directory
+    elif [ $# -eq 1 ] && [ -d "$1" ]; then
+        output=$(process_directory "$1")
+    # Otherwise process individual files
+    else
+        for file in "$@"; do
+            output+=$(process_file "$file")
+        done
+    fi
+    
+    # Copy to clipboard using pbcopy (macOS clipboard utility)
+    echo "$output" | pbcopy
+    
+    # Print confirmation
+    echo "Copied contents to clipboard!"
+}
+
+# Print usage if -h or --help is passed
+if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+    print_usage
+    exit 0
+fi
+
+# Run main function with all arguments
+main "$@"

@@ -181,7 +181,4 @@
 [init]
 
 	defaultBranch = main
-[user]
-	name = Ben Meyer-Meisel
-	email = 59774249+memben@users.noreply.github.com
-	signingkey = C6B92772
+

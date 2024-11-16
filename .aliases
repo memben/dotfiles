@@ -17,6 +17,8 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dev="cd ~/Desktop/dev"
 alias g="git"
+alias pyenv="source .venv/bin/activate"
+alias kamal="bundle exec kamal"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
