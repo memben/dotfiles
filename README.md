@@ -1,10 +1,10 @@
-# Ben’s dotfiles | forked from  
+# Ben’s dotfiles | forked from
 
 ![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
 
 ## Installation
 
-Make sure to grant the terminal "Full Disk Access" to ensure the script works from a different dir than root (otherwise Library will not be permitted to be accessed) 
+Make sure to grant the terminal "Full Disk Access" to ensure the script works from a different dir than root (otherwise Library will not be permitted to be accessed)
 
 ### Using Git and the bootstrap script
 
@@ -24,9 +24,6 @@ bash brew.sh
 bash bootstrap.sh
 ```
 
-
-
-
 ### Git-free install
 
 To install these dotfiles without Git (preferred):
@@ -43,17 +40,15 @@ Two support multiple external monitors on M1 install:
 https://www.synaptics.com/products/displaylink-graphics/downloads/macos
 
 ### MacOS Settings
-* setup ssh (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-* setup gpg (https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)
-* run ```bash source ~/.appConfig/.config``` to configure programms and keyboard layout as desired
-* Add custom keyboard layout in Settings >> Keyboard >> Edit Input >> + >> Scroll down >> others >> EN-DE
-* Set firefox as a standard webbrowser
-* for ASUS PB287Q set color profile to sRGB (to prevent flickering), make sure 60hz refresh rate is applied
-* edit Shortcuts 
-    * Shitf/Ctrl/R for Screenshot of Area to Clipboard
-    * Ctrl/Space for Spotlight
-* install browser addons for firefox (bitwarden, Addblocker unlimited, Leechblock, Remove Youtube suggestions)
 
+- setup ssh (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- setup gpg (https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)
+- run `bash source ~/.appConfig/.config` to configure programms and keyboard layout as desired
+- Add custom keyboard layout in Settings >> Keyboard >> Edit Input >> + >> Scroll down >> others >> EN-DE
+- edit Shortcuts
+  - Shitf/Ctrl/R for Screenshot of Area to Clipboard
+  - Ctrl/Space for Spotlight
+- install browser addons for firefox (bitwarden, Addblocker unlimited, Leechblock, Remove Youtube suggestions)
 
 ### Specify the `$PATH`
 
@@ -64,7 +59,6 @@ Here’s an example `~/.path` file that adds `/usr/local/bin` to the `$PATH`:
 ```bash
 export PATH="/usr/local/bin:$PATH"
 ```
-
 
 ### Add custom commands without creating a new fork
 
@@ -108,7 +102,6 @@ Some of the functionality of these dotfiles depends on formulae installed by `br
 Suggestions/improvements
 [welcome](https://github.com/mathiasbynens/dotfiles/issues)!
 
-
 ## Forked from
-| [Mathias Bynens](https://mathiasbynens.be/) |
 
+| [Mathias Bynens](https://mathiasbynens.be/) |

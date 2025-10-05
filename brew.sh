@@ -49,8 +49,8 @@ brew install vim # --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install php
-brew install gmp
+# brew install php
+# brew install gmp
 
 # Install font tools.
 # brew tap bramstein/webfonttools
@@ -92,7 +92,7 @@ brew install git-lfs
 # brew install gs
 brew install imagemagick # --with-webp
 brew install lua
-brew install lynx
+# brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
@@ -111,21 +111,24 @@ brew install tmux
 echo "Installing brew cask..."
 brew tap homebrew/cask
 
-# Development Languages 
-brew install python3
+
+# Python https://docs.astral.sh/uv/guides/install-python/#getting-started
+brew install uv
+echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
+
 
 # (more) Development Tools
 echo "Installing development tools..."
 brew install htop
+brew install stats
 brew install curl
-brew install docker
 brew install --cask docker # Docker-Desktop
-brew install --cask visual-studio-code
+brew install --cask cursor
+brew install --cask datagrip
+brew install --cask proxyman
 
-# Virtualization
-echo "Installing virtualization tools..."
-brew install qemu
-brew install --cask utm
+brew install codex
+brew install --cask claude-code
 
 # Web Tools
 echo "Installing web tools..."
@@ -134,6 +137,12 @@ brew install nvm
 brew install --cask firefox
 brew install --cask google-chrome
 
+# # Virtualization
+# echo "Installing virtualization tools..."
+# brew install qemu
+# brew install --cask utm
+
+
 # File Storage
 echo "Installing file storage tools ..."
 brew install --cask onedrive
@@ -141,19 +150,11 @@ brew install --cask onedrive
 # Communication Apps
 echo "Installing communication apps..."
 brew install --cask microsoft-outlook
-brew install --cask slack
-# brew install --cask telegram # try webapp instead
-brew install --cask zoom
 
 # General Utility Apps
 echo "Installing general utility apps..."
 # brew install --cask bitwarden # does not support fingerprint webintegration
-brew install --cask authy
-brew install --cask notion
-brew install --cask scroll-reverser
 brew install --cask rectangle
-brew install --cask spotify 
-brew install --cask karabiner-elements
 # brew install --cask microsoft-onenote
 
 
