@@ -49,7 +49,10 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-gpgconf --launch gpg-agent
+if command -v gpgconf >/dev/null 2>&1; then
+	gpgconf --launch gpg-agent || echo "Warning: gpg-agent not available yet"
+fi
 
 # shuffle through options
 bind '"\C-i": menu-complete'
+
