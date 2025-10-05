@@ -40,6 +40,7 @@ Two support multiple external monitors on M1 install:
 https://www.synaptics.com/products/displaylink-graphics/downloads/macos
 
 ### MacOS Settings
+<<<<<<< HEAD
 
 - run `bash .macos`
 - setup ssh (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
@@ -53,6 +54,9 @@ https://www.synaptics.com/products/displaylink-graphics/downloads/macos
   - Ctrl/Space for Spotlight
 - install browser addons for firefox (bitwarden, Addblocker unlimited, Leechblock, Remove Youtube suggestions)
 
+=======
+* run ```bash .macos```
+>>>>>>> 600ce1518ee7cf66972e28802102fc8e2276eb1b
 * setup ssh (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * setup gpg (https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)
 * run `bash source ~/.appConfig/.config` to configure programms and keyboard layout as desired
