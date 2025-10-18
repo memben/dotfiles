@@ -119,6 +119,7 @@ echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 
 # (more) Development Tools
 echo "Installing development tools..."
+brew install pinentry-mac
 brew install htop
 brew install stats
 brew install curl
