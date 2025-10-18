@@ -101,6 +101,9 @@ brew install rlwrap
 brew install ssh-copy-id
 brew install tree
 brew install tmux
+
+brew install ncdu
+brew install pinentry-mac
 # brew install vbindiff
 # brew install zopfli
 
@@ -119,7 +122,6 @@ echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 
 # (more) Development Tools
 echo "Installing development tools..."
-brew install pinentry-mac
 brew install htop
 brew install stats
 brew install curl
@@ -127,6 +129,7 @@ brew install --cask docker # Docker-Desktop
 brew install --cask cursor
 brew install --cask datagrip
 brew install --cask proxyman
+brew install --cask tailscale
 
 brew install codex
 brew install --cask claude-code
