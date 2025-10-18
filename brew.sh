@@ -147,9 +147,13 @@ brew install --cask google-chrome
 echo "Installing file storage tools ..."
 brew install --cask onedrive
 
-# Communication Apps
+# Apps
 echo "Installing communication apps..."
 brew install --cask microsoft-outlook
+brew install --cask spotify
+echo "Set spotify cache dir to /private/tmp/SpotifyCache to save disk space"
+brew install --cask whatsapp
+brew install --cask telegram
 
 # General Utility Apps
 echo "Installing general utility apps..."
@@ -159,7 +163,6 @@ brew install --cask rectangle
 
 
 # Brew install multiple apps in parallel
-
 
 echo "Installing apps from App Store..."
 brew install mas

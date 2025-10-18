@@ -127,7 +127,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	gpgSign = true
 
 [diff]
 
@@ -182,3 +182,9 @@
 
 	defaultBranch = main
 
+[user]
+	name = Ben Meyer-Meisel
+	email = 59774249+memben@users.noreply.github.com
+	signingkey = 8857A5EB
+[tag]
+	gpgSign = true
