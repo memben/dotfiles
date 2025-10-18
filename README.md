@@ -41,18 +41,8 @@ https://www.synaptics.com/products/displaylink-graphics/downloads/macos
 
 ### MacOS Settings
 
+- remap Globe/Fn to Command; enable right click for secondary; 
 - run `bash .macos`
-- setup ssh (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-- setup gpg (https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)
-- run `bash source ~/.appConfig/.config` to configure programms and keyboard layout as desired
-- Add custom keyboard layout in Settings >> Keyboard >> Edit Input >> + >> Scroll down >> others >> EN-DE
-- Set firefox as a standard webbrowser
-- for ASUS PB287Q set color profile to sRGB (to prevent flickering), make sure 60hz refresh rate is applied
-- edit Shortcuts
-  - Shitf/Ctrl/R for Screenshot of Area to Clipboard
-  - Ctrl/Space for Spotlight
-- install browser addons for firefox (bitwarden, Addblocker unlimited, Leechblock, Remove Youtube suggestions)
-
 * setup ssh (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * setup gpg (https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)
 (`pinentry-program /opt/homebrew/bin/pinentry-mac` in ~/.gnupg/gpg-agent.conf)
@@ -61,7 +51,7 @@ https://www.synaptics.com/products/displaylink-graphics/downloads/macos
 * edit Shortcuts
   - Shitf/Ctrl/R for Screenshot of Area to Clipboard
   - Ctrl/Space for Spotlight
-* install browser addons for firefox (bitwarden, Addblocker unlimited, Leechblock, Remove Youtube suggestions)
+* install browser addons for firefox / chrome (bitwarden, uBlock origin)
 
 ### Specify the `$PATH`
 
