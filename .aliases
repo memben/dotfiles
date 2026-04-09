@@ -9,6 +9,14 @@ alias ......="cd ../../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -" # get back to previous directory
 
+# https://news.ycombinator.com/item?id=47687273
+alias who="git shortlog -sn --no-merges HEAD"
+alias dmg="git log --oneline -i -E --grep='(incident|outage|downtime|rollback|revert|mitigate|mitigation|hotfix|broke|prod)' --since='1 year ago'"
+alias bugs="git log --oneline -i -E --grep='(bug|bugfix|fix|fixed|fixes|defect|regression|hotfix|broke)' --since='1 year ago'"
+alias bugfiles="git log --name-only --format='' -i -E --grep='(bug|bugfix|fix|fixed|fixes|defect|regression|hotfix|broke)' --since='1 year ago' | sort | uniq -c | sort -nr"
+alias monthly="git log --since='1 year ago' --format='%ad' --date=format:'%Y-%m' | sort | uniq -c"
+alias churn="git log --format='' --name-only --diff-filter=AM --since='1 year ago' | sort | uniq -c | sort -nr | head -20"
+
 # Shortcuts
 alias od="cd ~/OneDrive"
 alias uni="cd ~/OneDrive/uni"
