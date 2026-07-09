@@ -34,6 +34,11 @@ elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
 
+# Load nvm installed by Homebrew
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && source "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null; then
 	complete -o default -o nospace -F _git g;
@@ -55,4 +60,3 @@ fi
 
 # shuffle through options
 bind '"\C-i": menu-complete'
-
